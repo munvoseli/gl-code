@@ -2,6 +2,8 @@
 //#define GL_SHADER_DEBUG
 
 // for 2d rendering with OpenGL in an SDL program
+// you'll probably need to change the opengl shading version from 460
+// i don't think it'll work for anything less than 330
 
 /*
 #include "SDL2/SDL.h"
@@ -42,7 +44,7 @@ SDL_Quit();
 typedef struct Camera {
 	float x0;
 	float y0;
-	float x2; // half-width and half-height, really
+	float x2;
 	float y2;
 } Camera;
 
